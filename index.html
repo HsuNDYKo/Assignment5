@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f3fbfb;
+        font-family: "Open Sans", sans-serif;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 940px;
+        margin: auto;
+      }
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 280px;
+        height: 400px;
+      }
+      .header img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .header {
+        position: relative;
+      }
+      .card-div {
+        display: flex;
+        flex-direction: row;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        min-height: 250px;
+      }
+      .tag {
+        background-color: #ccc;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 12px;
+        margin: 0;
+        padding: 2px 10px;
+        text-transform: uppercase;
+      }
+
+      .card-body h4 {
+        margin: 10px 0;
+      }
+      .card-body p {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(70, 68, 68);
+      }
+      .container {
+        justify-items: center;
+        margin: 30px;
+        display: flex;
+      }
+      .d2 {
+        color: rgb(83, 83, 236);
+        text-transform: uppercase;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .b {
+        display: flex;
+        justify-content: space-between;
+      }
+      .hr {
+        margin-top: 30px;
+        font-family: "Roboto", sans-serif;
+        color: #3c3c3c;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .hr i {
+        margin-right: 5px;
+      }
+      .cmt {
+        font-family: "Roboto", sans-serif;
+      }
+      button {
+        height: 20px;
+        width: 50px;
+        background-color: rgb(143, 25, 253);
+        border: 0px;
+        font-size: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d2">
+      <p><i class="fa fa-commenting-o"></i>&nbsp;Cooking BLog</p>
+      <p style="color: black; text-transform: capitalize">See All</p>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <img
+            src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+          <div calss="button">
+            <button>Cooking</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4>Simple Salad Recipe ever</h4>
+          <p style="color: gray; text-align: justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="hr">
+            <span><i class="fa fa-clock-o"></i>6 mins ago</span>
+
+            <span><i class="fa fa-commenting-o"></i>39 Comments</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <img
+            src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+          <div calss="button">
+            <button>Cooking</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4>Best FastFood Ideas (Yummy)</h4>
+          <p style="color: gray; text-align: justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="hr">
+            <span><i class="fa fa-clock-o"></i>10 days ago</span>
+
+            <span><i class="fa fa-commenting-o"></i>0 Comments</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <img
+            src="https://images.pexels.com/photos/6086/food-salad-healthy-vegetables.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          />
+          <div calss="button">
+            <button>Cooking</button>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4>Why to eat salad?</h4>
+          <p style="color: gray; text-align: justify">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="hr">
+            <span><i class="fa fa-clock-o"></i>16 hours ago</span>
+
+            <span><i class="fa fa-commenting-o"></i>9 Comments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
